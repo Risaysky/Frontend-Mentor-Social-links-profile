@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: interFont;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    font-family: interFont;
+    margin: 0;
+    background-color: var(--grey-900);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container {
+    padding: 2.25rem;
+    margin: 2.25rem;
+    width: 375px;
+    background-color: var(--grey-800);
+    border-radius: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headshot {
+    width: 90px;
+    border-radius: 100%;
+}
+
+.name {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.location {
+    color: var(--green);
+    margin: .5rem 0 0;
+    font-weight: 600;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--grey-700);
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    color: var(--grey-700);
+    background-color: var(--green);
+}
